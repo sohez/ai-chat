@@ -62,3 +62,6 @@ h1{
 h2,h3,h4,h5,h6{
     font-size: 1rem;
 }
+#error-text{
+    color: rgb(194, 9, 9) !important;
+}

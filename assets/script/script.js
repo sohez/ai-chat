@@ -97,8 +97,10 @@ async function fetchResponseFromGPT(message) {
             }),
         }
     ).catch((e)=>{
-        alert("erro Occur"+e)
-        console.log(e);
+        let er = `<p id="error-text">Error Occur <br> Try Again..<br>Error is:${e}</p>`;
+        appendMessage(er, "received");
+        // alert("erro Occur"+e)
+        // console.log(e);
     })
 
     try{
@@ -108,7 +110,9 @@ async function fetchResponseFromGPT(message) {
         let markedText = marked.parse(text);
         appendMessage(markedText, "received");
     }catch(e){
-        alert("erro Occur"+e)
+        // alert("erro Occur"+e)
+        let er = `<p id="error-text">Error Occur <br> Try Again..<br>Error is:${e}</p>`;
+        appendMessage(er, "received");
     }
 
     hilightCodeBlock();
