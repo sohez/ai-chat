@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body,html{
+    background-color: #f0f8ff;
+    font-family: "Noto Sans", sans-serif !important;
+}
+
+.chat-card {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-body {
+    max-height: 80svh;
+    overflow-y: auto;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 95%;
+}
+
+.chat-message.sent {
+    align-self: flex-end;
+    background-color: #d1ecf1;
+}
+
+.chat-message.received {
+    align-self: flex-start;
+    background-color: #e2e3e5;
+}
+
+code{
+    border-radius: 5px;
+}
+
+table {
+    overflow-x: scroll;
+}
+#typing{
+    display: none;
+    /* opacity: 0; */
+    transition: all 1s ease-in;
+}
+.show-typing{
+    display:block !important;
+    opacity: 1;
+}
