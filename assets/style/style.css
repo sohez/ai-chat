@@ -55,3 +55,10 @@ table {
     display:block !important;
     opacity: 1;
 }
+
+h1{
+    font-size: 1.1rem;
+}
+h2,h3,h4,h5,h6{
+    font-size: 1rem;
+}
